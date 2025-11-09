@@ -1,0 +1,63 @@
+{
+  "name": "embyflix",
+  "version": "1.0.16",
+  "description": "Emby client for Samsung Tizen TVs",
+  "packageType": "app",
+  "appName": "EmbyFlix",
+  "appPath": "index.html",
+  "keys": [
+    "MediaPlay",
+    "MediaPause",
+    "MediaStop",
+    "MediaPlayPause",
+    "MediaFastForward",
+    "MediaRewind",
+    "MediaTrackNext",
+    "MediaTrackPrevious",
+    "ColorF0Red",
+    "ColorF1Green",
+    "ColorF2Yellow",
+    "ColorF3Blue"
+  ],
+  "author": "Mike",
+  "license": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "sync-theme": "node scripts/sync-theme.js",
+    "clean": "node scripts/clean-assets.js",
+    "dev": "npm run sync-theme && vite",
+    "build": "npm run sync-theme && vue-tsc && vite build",
+    "build:clean": "npm run clean && npm run build",
+    "preview": "vite preview",
+    "restore:dev": "node scripts/restore-dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lysergic-mike/embyflix-tizen.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lysergic-mike/embyflix-tizen/issues"
+  },
+  "homepage": "https://github.com/lysergic-mike/embyflix-tizen#readme",
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "@unocss/preset-wind": "^66.5.4",
+    "@unocss/preset-wind3": "^66.5.4",
+    "@unocss/reset": "^66.5.4",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "sass": "^1.93.3",
+    "typescript": "^5.9.3",
+    "unocss": "^66.5.4",
+    "vite": "^7.1.12",
+    "vue": "^3.5.22",
+    "vue-tsc": "^3.1.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "hls.js": "^1.6.14",
+    "terser": "^5.44.0",
+    "vue-router": "^4.0.13"
+  }
+}
