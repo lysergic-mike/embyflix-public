@@ -1,6 +1,6 @@
 {
   "name": "embyflix",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Emby client for Samsung Tizen TVs",
   "packageType": "app",
   "appName": "EmbyFlix",
